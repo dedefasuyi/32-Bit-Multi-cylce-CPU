@@ -1,0 +1,383 @@
+#-----------------------------------------------------------
+# Vivado v2022.2 (64-bit)
+# SW Build 3671981 on Fri Oct 14 05:00:03 MDT 2022
+# IP Build 3669848 on Fri Oct 14 08:30:02 MDT 2022
+# Start of session at: Fri May  5 07:21:54 2023
+# Process ID: 7944
+# Current directory: C:/Users/dflam/Downloads/Final Project Test/final project test/final project test.runs/synth_1
+# Command line: vivado.exe -log sccomputer.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source sccomputer.tcl
+# Log file: C:/Users/dflam/Downloads/Final Project Test/final project test/final project test.runs/synth_1/sccomputer.vds
+# Journal file: C:/Users/dflam/Downloads/Final Project Test/final project test/final project test.runs/synth_1\vivado.jou
+# Running On: LAPTOP-26GF3TT8, OS: Windows, CPU Frequency: 1992 MHz, CPU Physical cores: 4, Host memory: 12791 MB
+#-----------------------------------------------------------
+source sccomputer.tcl -notrace
+create_project: Time (s): cpu = 00:00:03 ; elapsed = 00:00:09 . Memory (MB): peak = 384.387 ; gain = 43.938
+Command: read_checkpoint -auto_incremental -incremental {C:/Users/dflam/Downloads/Final Project Test/final project test/final project test.srcs/utils_1/imports/synth_1/EXEMEMreg.dcp}
+INFO: [Vivado 12-5825] Read reference checkpoint from C:/Users/dflam/Downloads/Final Project Test/final project test/final project test.srcs/utils_1/imports/synth_1/EXEMEMreg.dcp for incremental synthesis
+INFO: [Vivado 12-7989] Please ensure there are no constraint changes
+Command: synth_design -top sccomputer -part xc7z010clg400-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7z010'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7z010'
+INFO: [Designutils 20-5440] No compile time benefit to using incremental synthesis; A full resynthesis will be run
+INFO: [Designutils 20-4379] Flow is switching to default flow due to incremental criteria not met. If you would like to alter this behaviour and have the flow terminate instead, please set the following parameter config_implementation {autoIncr.Synth.RejectBehavior Terminate}
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 32780
+INFO: [Synth 8-11241] undeclared symbol 'REGCCE', assumed default net type 'wire' [D:/Vivado/2022.2/data/verilog/src/unimacro/BRAM_SINGLE_MACRO.v:2170]
+INFO: [Synth 8-11241] undeclared symbol 'dataout', assumed default net type 'wire' [C:/Users/dflam/Downloads/Final Project Test/final project test/final project test.srcs/sources_1/new/PC.v:59]
+INFO: [Synth 8-11241] undeclared symbol 'datain', assumed default net type 'wire' [C:/Users/dflam/Downloads/Final Project Test/final project test/final project test.srcs/sources_1/new/PC.v:59]
+INFO: [Synth 8-11241] undeclared symbol 'addr', assumed default net type 'wire' [C:/Users/dflam/Downloads/Final Project Test/final project test/final project test.srcs/sources_1/new/PC.v:59]
+INFO: [Synth 8-11241] undeclared symbol 'we', assumed default net type 'wire' [C:/Users/dflam/Downloads/Final Project Test/final project test/final project test.srcs/sources_1/new/PC.v:59]
+---------------------------------------------------------------------------------
+Starting Synthesize : Time (s): cpu = 00:00:03 ; elapsed = 00:00:10 . Memory (MB): peak = 825.941 ; gain = 408.836
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'sccomputer' [C:/Users/dflam/Downloads/Final Project Test/final project test/final project test.srcs/sources_1/new/PC.v:44]
+INFO: [Synth 8-6157] synthesizing module 'CPU' [C:/Users/dflam/Downloads/Final Project Test/final project test/final project test.srcs/sources_1/new/PC.v:63]
+INFO: [Synth 8-6157] synthesizing module 'program_counter' [C:/Users/dflam/Downloads/Final Project Test/final project test/final project test.srcs/sources_1/new/PC.v:132]
+INFO: [Synth 8-6155] done synthesizing module 'program_counter' (0#1) [C:/Users/dflam/Downloads/Final Project Test/final project test/final project test.srcs/sources_1/new/PC.v:132]
+INFO: [Synth 8-6157] synthesizing module 'adder' [C:/Users/dflam/Downloads/Final Project Test/final project test/final project test.srcs/sources_1/new/PC.v:147]
+INFO: [Synth 8-6155] done synthesizing module 'adder' (0#1) [C:/Users/dflam/Downloads/Final Project Test/final project test/final project test.srcs/sources_1/new/PC.v:147]
+INFO: [Synth 8-6157] synthesizing module 'control' [C:/Users/dflam/Downloads/Final Project Test/final project test/final project test.srcs/sources_1/new/PC.v:155]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/dflam/Downloads/Final Project Test/final project test/final project test.srcs/sources_1/new/PC.v:167]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/dflam/Downloads/Final Project Test/final project test/final project test.srcs/sources_1/new/PC.v:165]
+INFO: [Synth 8-6155] done synthesizing module 'control' (0#1) [C:/Users/dflam/Downloads/Final Project Test/final project test/final project test.srcs/sources_1/new/PC.v:155]
+INFO: [Synth 8-6157] synthesizing module 'Mux_regfile' [C:/Users/dflam/Downloads/Final Project Test/final project test/final project test.srcs/sources_1/new/PC.v:434]
+INFO: [Synth 8-6155] done synthesizing module 'Mux_regfile' (0#1) [C:/Users/dflam/Downloads/Final Project Test/final project test/final project test.srcs/sources_1/new/PC.v:434]
+INFO: [Synth 8-6157] synthesizing module 'Mux_JalToWn' [C:/Users/dflam/Downloads/Final Project Test/final project test/final project test.srcs/sources_1/new/PC.v:447]
+INFO: [Synth 8-6155] done synthesizing module 'Mux_JalToWn' (0#1) [C:/Users/dflam/Downloads/Final Project Test/final project test/final project test.srcs/sources_1/new/PC.v:447]
+INFO: [Synth 8-6157] synthesizing module 'regfile' [C:/Users/dflam/Downloads/Final Project Test/final project test/final project test.srcs/sources_1/new/PC.v:459]
+INFO: [Synth 8-6155] done synthesizing module 'regfile' (0#1) [C:/Users/dflam/Downloads/Final Project Test/final project test/final project test.srcs/sources_1/new/PC.v:459]
+INFO: [Synth 8-6157] synthesizing module 'Mux_Alua' [C:/Users/dflam/Downloads/Final Project Test/final project test/final project test.srcs/sources_1/new/PC.v:495]
+INFO: [Synth 8-6155] done synthesizing module 'Mux_Alua' (0#1) [C:/Users/dflam/Downloads/Final Project Test/final project test/final project test.srcs/sources_1/new/PC.v:495]
+INFO: [Synth 8-6157] synthesizing module 'SignExtend' [C:/Users/dflam/Downloads/Final Project Test/final project test/final project test.srcs/sources_1/new/PC.v:508]
+INFO: [Synth 8-6155] done synthesizing module 'SignExtend' (0#1) [C:/Users/dflam/Downloads/Final Project Test/final project test/final project test.srcs/sources_1/new/PC.v:508]
+INFO: [Synth 8-6157] synthesizing module 'Mux_Alub' [C:/Users/dflam/Downloads/Final Project Test/final project test/final project test.srcs/sources_1/new/PC.v:520]
+INFO: [Synth 8-6155] done synthesizing module 'Mux_Alub' (0#1) [C:/Users/dflam/Downloads/Final Project Test/final project test/final project test.srcs/sources_1/new/PC.v:520]
+INFO: [Synth 8-6157] synthesizing module 'ALU' [C:/Users/dflam/Downloads/Final Project Test/final project test/final project test.srcs/sources_1/new/PC.v:533]
+INFO: [Synth 8-6155] done synthesizing module 'ALU' (0#1) [C:/Users/dflam/Downloads/Final Project Test/final project test/final project test.srcs/sources_1/new/PC.v:533]
+INFO: [Synth 8-6157] synthesizing module 'Mux_WData' [C:/Users/dflam/Downloads/Final Project Test/final project test/final project test.srcs/sources_1/new/PC.v:557]
+INFO: [Synth 8-6155] done synthesizing module 'Mux_WData' (0#1) [C:/Users/dflam/Downloads/Final Project Test/final project test/final project test.srcs/sources_1/new/PC.v:557]
+INFO: [Synth 8-6157] synthesizing module 'Mux_JalToWdata' [C:/Users/dflam/Downloads/Final Project Test/final project test/final project test.srcs/sources_1/new/PC.v:570]
+INFO: [Synth 8-6155] done synthesizing module 'Mux_JalToWdata' (0#1) [C:/Users/dflam/Downloads/Final Project Test/final project test/final project test.srcs/sources_1/new/PC.v:570]
+INFO: [Synth 8-6157] synthesizing module 'branch_adder' [C:/Users/dflam/Downloads/Final Project Test/final project test/final project test.srcs/sources_1/new/PC.v:583]
+INFO: [Synth 8-6155] done synthesizing module 'branch_adder' (0#1) [C:/Users/dflam/Downloads/Final Project Test/final project test/final project test.srcs/sources_1/new/PC.v:583]
+INFO: [Synth 8-6157] synthesizing module 'Mux4to1' [C:/Users/dflam/Downloads/Final Project Test/final project test/final project test.srcs/sources_1/new/PC.v:592]
+INFO: [Synth 8-6155] done synthesizing module 'Mux4to1' (0#1) [C:/Users/dflam/Downloads/Final Project Test/final project test/final project test.srcs/sources_1/new/PC.v:592]
+INFO: [Synth 8-6155] done synthesizing module 'CPU' (0#1) [C:/Users/dflam/Downloads/Final Project Test/final project test/final project test.srcs/sources_1/new/PC.v:63]
+INFO: [Synth 8-6157] synthesizing module 'scinstmem' [C:/Users/dflam/Downloads/Final Project Test/final project test/final project test.srcs/sources_1/new/PC.v:610]
+INFO: [Synth 8-6155] done synthesizing module 'scinstmem' (0#1) [C:/Users/dflam/Downloads/Final Project Test/final project test/final project test.srcs/sources_1/new/PC.v:610]
+INFO: [Synth 8-6157] synthesizing module 'scdatamem' [C:/Users/dflam/Downloads/Final Project Test/final project test/final project test.srcs/sources_1/new/PC.v:650]
+INFO: [Synth 8-6155] done synthesizing module 'scdatamem' (0#1) [C:/Users/dflam/Downloads/Final Project Test/final project test/final project test.srcs/sources_1/new/PC.v:650]
+WARNING: [Synth 8-689] width (1) of port connection 'dataout' does not match port width (32) of module 'scdatamem' [C:/Users/dflam/Downloads/Final Project Test/final project test/final project test.srcs/sources_1/new/PC.v:59]
+INFO: [Synth 8-6155] done synthesizing module 'sccomputer' (0#1) [C:/Users/dflam/Downloads/Final Project Test/final project test/final project test.srcs/sources_1/new/PC.v:44]
+WARNING: [Synth 8-3848] Net memout in module/entity sccomputer does not have driver. [C:/Users/dflam/Downloads/Final Project Test/final project test/final project test.srcs/sources_1/new/PC.v:49]
+WARNING: [Synth 8-3848] Net datain in module/entity sccomputer does not have driver. [C:/Users/dflam/Downloads/Final Project Test/final project test/final project test.srcs/sources_1/new/PC.v:59]
+WARNING: [Synth 8-3848] Net addr in module/entity sccomputer does not have driver. [C:/Users/dflam/Downloads/Final Project Test/final project test/final project test.srcs/sources_1/new/PC.v:59]
+WARNING: [Synth 8-3848] Net we in module/entity sccomputer does not have driver. [C:/Users/dflam/Downloads/Final Project Test/final project test/final project test.srcs/sources_1/new/PC.v:59]
+WARNING: [Synth 8-7129] Port addr[31] in module scdatamem is either unconnected or has no load
+WARNING: [Synth 8-7129] Port addr[30] in module scdatamem is either unconnected or has no load
+WARNING: [Synth 8-7129] Port addr[29] in module scdatamem is either unconnected or has no load
+WARNING: [Synth 8-7129] Port addr[28] in module scdatamem is either unconnected or has no load
+WARNING: [Synth 8-7129] Port addr[27] in module scdatamem is either unconnected or has no load
+WARNING: [Synth 8-7129] Port addr[26] in module scdatamem is either unconnected or has no load
+WARNING: [Synth 8-7129] Port addr[25] in module scdatamem is either unconnected or has no load
+WARNING: [Synth 8-7129] Port addr[24] in module scdatamem is either unconnected or has no load
+WARNING: [Synth 8-7129] Port addr[23] in module scdatamem is either unconnected or has no load
+WARNING: [Synth 8-7129] Port addr[22] in module scdatamem is either unconnected or has no load
+WARNING: [Synth 8-7129] Port addr[21] in module scdatamem is either unconnected or has no load
+WARNING: [Synth 8-7129] Port addr[20] in module scdatamem is either unconnected or has no load
+WARNING: [Synth 8-7129] Port addr[19] in module scdatamem is either unconnected or has no load
+WARNING: [Synth 8-7129] Port addr[18] in module scdatamem is either unconnected or has no load
+WARNING: [Synth 8-7129] Port addr[17] in module scdatamem is either unconnected or has no load
+WARNING: [Synth 8-7129] Port addr[16] in module scdatamem is either unconnected or has no load
+WARNING: [Synth 8-7129] Port addr[15] in module scdatamem is either unconnected or has no load
+WARNING: [Synth 8-7129] Port addr[14] in module scdatamem is either unconnected or has no load
+WARNING: [Synth 8-7129] Port addr[13] in module scdatamem is either unconnected or has no load
+WARNING: [Synth 8-7129] Port addr[12] in module scdatamem is either unconnected or has no load
+WARNING: [Synth 8-7129] Port addr[11] in module scdatamem is either unconnected or has no load
+WARNING: [Synth 8-7129] Port addr[10] in module scdatamem is either unconnected or has no load
+WARNING: [Synth 8-7129] Port addr[9] in module scdatamem is either unconnected or has no load
+WARNING: [Synth 8-7129] Port addr[8] in module scdatamem is either unconnected or has no load
+WARNING: [Synth 8-7129] Port addr[7] in module scdatamem is either unconnected or has no load
+WARNING: [Synth 8-7129] Port addr[1] in module scdatamem is either unconnected or has no load
+WARNING: [Synth 8-7129] Port addr[0] in module scdatamem is either unconnected or has no load
+WARNING: [Synth 8-7129] Port a[31] in module scinstmem is either unconnected or has no load
+WARNING: [Synth 8-7129] Port a[30] in module scinstmem is either unconnected or has no load
+WARNING: [Synth 8-7129] Port a[29] in module scinstmem is either unconnected or has no load
+WARNING: [Synth 8-7129] Port a[28] in module scinstmem is either unconnected or has no load
+WARNING: [Synth 8-7129] Port a[27] in module scinstmem is either unconnected or has no load
+WARNING: [Synth 8-7129] Port a[26] in module scinstmem is either unconnected or has no load
+WARNING: [Synth 8-7129] Port a[25] in module scinstmem is either unconnected or has no load
+WARNING: [Synth 8-7129] Port a[24] in module scinstmem is either unconnected or has no load
+WARNING: [Synth 8-7129] Port a[23] in module scinstmem is either unconnected or has no load
+WARNING: [Synth 8-7129] Port a[22] in module scinstmem is either unconnected or has no load
+WARNING: [Synth 8-7129] Port a[21] in module scinstmem is either unconnected or has no load
+WARNING: [Synth 8-7129] Port a[20] in module scinstmem is either unconnected or has no load
+WARNING: [Synth 8-7129] Port a[19] in module scinstmem is either unconnected or has no load
+WARNING: [Synth 8-7129] Port a[18] in module scinstmem is either unconnected or has no load
+WARNING: [Synth 8-7129] Port a[17] in module scinstmem is either unconnected or has no load
+WARNING: [Synth 8-7129] Port a[16] in module scinstmem is either unconnected or has no load
+WARNING: [Synth 8-7129] Port a[15] in module scinstmem is either unconnected or has no load
+WARNING: [Synth 8-7129] Port a[14] in module scinstmem is either unconnected or has no load
+WARNING: [Synth 8-7129] Port a[13] in module scinstmem is either unconnected or has no load
+WARNING: [Synth 8-7129] Port a[12] in module scinstmem is either unconnected or has no load
+WARNING: [Synth 8-7129] Port a[11] in module scinstmem is either unconnected or has no load
+WARNING: [Synth 8-7129] Port a[10] in module scinstmem is either unconnected or has no load
+WARNING: [Synth 8-7129] Port a[9] in module scinstmem is either unconnected or has no load
+WARNING: [Synth 8-7129] Port a[8] in module scinstmem is either unconnected or has no load
+WARNING: [Synth 8-7129] Port a[7] in module scinstmem is either unconnected or has no load
+WARNING: [Synth 8-7129] Port a[1] in module scinstmem is either unconnected or has no load
+WARNING: [Synth 8-7129] Port a[0] in module scinstmem is either unconnected or has no load
+---------------------------------------------------------------------------------
+Finished Synthesize : Time (s): cpu = 00:00:05 ; elapsed = 00:00:13 . Memory (MB): peak = 918.379 ; gain = 501.273
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:05 ; elapsed = 00:00:14 . Memory (MB): peak = 918.379 ; gain = 501.273
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7z010clg400-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:05 ; elapsed = 00:00:14 . Memory (MB): peak = 918.379 ; gain = 501.273
+---------------------------------------------------------------------------------
+INFO: [Device 21-403] Loading part xc7z010clg400-1
+WARNING: [Synth 8-327] inferring latch for variable 'aluc_reg' [C:/Users/dflam/Downloads/Final Project Test/final project test/final project test.srcs/sources_1/new/PC.v:176]
+WARNING: [Synth 8-327] inferring latch for variable 'regrt_reg' [C:/Users/dflam/Downloads/Final Project Test/final project test/final project test.srcs/sources_1/new/PC.v:170]
+WARNING: [Synth 8-327] inferring latch for variable 'pcsrc_reg' [C:/Users/dflam/Downloads/Final Project Test/final project test/final project test.srcs/sources_1/new/PC.v:178]
+WARNING: [Synth 8-327] inferring latch for variable 'wreg_reg' [C:/Users/dflam/Downloads/Final Project Test/final project test/final project test.srcs/sources_1/new/PC.v:169]
+WARNING: [Synth 8-327] inferring latch for variable 'aluimm_reg' [C:/Users/dflam/Downloads/Final Project Test/final project test/final project test.srcs/sources_1/new/PC.v:174]
+WARNING: [Synth 8-327] inferring latch for variable 'wmem_reg' [C:/Users/dflam/Downloads/Final Project Test/final project test/final project test.srcs/sources_1/new/PC.v:177]
+WARNING: [Synth 8-327] inferring latch for variable 'm2reg_reg' [C:/Users/dflam/Downloads/Final Project Test/final project test/final project test.srcs/sources_1/new/PC.v:172]
+WARNING: [Synth 8-327] inferring latch for variable 'shift_reg' [C:/Users/dflam/Downloads/Final Project Test/final project test/final project test.srcs/sources_1/new/PC.v:173]
+WARNING: [Synth 8-327] inferring latch for variable 'sext_reg' [C:/Users/dflam/Downloads/Final Project Test/final project test/final project test.srcs/sources_1/new/PC.v:175]
+WARNING: [Synth 8-327] inferring latch for variable 'jal_reg' [C:/Users/dflam/Downloads/Final Project Test/final project test/final project test.srcs/sources_1/new/PC.v:171]
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:05 ; elapsed = 00:00:15 . Memory (MB): peak = 918.379 ; gain = 501.273
+---------------------------------------------------------------------------------
+No constraint files found.
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input   32 Bit       Adders := 2     
+	   3 Input   32 Bit       Adders := 1     
++---XORs : 
+	   2 Input     32 Bit         XORs := 1     
++---Registers : 
+	               32 Bit    Registers := 1     
++---RAMs : 
+	             1024 Bit	(32 X 32 bit)          RAMs := 1     
++---Muxes : 
+	   2 Input   32 Bit        Muxes := 9     
+	   8 Input   32 Bit        Muxes := 1     
+	   4 Input   32 Bit        Muxes := 1     
+	   2 Input    5 Bit        Muxes := 2     
+	  10 Input    4 Bit        Muxes := 1     
+	  10 Input    1 Bit        Muxes := 3     
+	  13 Input    1 Bit        Muxes := 8     
+	   2 Input    1 Bit        Muxes := 1     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 80 (col length:40)
+BRAMs: 120 (col length: RAMB18 40 RAMB36 20)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+No constraint files found.
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-7080] Parallel synthesis criteria is not met
+WARNING: [Synth 8-6014] Unused sequential element dmem/ram_reg was removed. 
+WARNING: [Synth 8-3332] Sequential element (sccpu/cntrol_reg/wmem_reg) is unused and will be removed from module sccomputer.
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:11 ; elapsed = 00:00:31 . Memory (MB): peak = 1154.426 ; gain = 737.320
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+
+ROM: Preliminary Mapping Report
++------------+--------------+---------------+----------------+
+|Module Name | RTL Object   | Depth x Width | Implemented As | 
++------------+--------------+---------------+----------------+
+|scinstmem   | ram          | 32x30         | LUT            | 
+|sccomputer  | inst_mem/ram | 32x30         | LUT            | 
++------------+--------------+---------------+----------------+
+
+
+Distributed RAM: Preliminary Mapping Report (see note below)
++------------+----------------------------+-----------+----------------------+--------------+
+|Module Name | RTL Object                 | Inference | Size (Depth x Width) | Primitives   | 
++------------+----------------------------+-----------+----------------------+--------------+
+|sccomputer  | sccpu/registerfile/RAM_reg | Implied   | 32 x 32              | RAM32M x 12  | 
++------------+----------------------------+-----------+----------------------+--------------+
+
+Note: The table above is a preliminary report that shows the Distributed RAMs at the current stage of the synthesis flow. Some Distributed RAMs may be reimplemented as non Distributed RAM primitives later in the synthesis flow. Multiple instantiated RAMs are reported only once.
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+No constraint files found.
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:11 ; elapsed = 00:00:31 . Memory (MB): peak = 1163.262 ; gain = 746.156
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+
+Distributed RAM: Final Mapping Report
++------------+----------------------------+-----------+----------------------+--------------+
+|Module Name | RTL Object                 | Inference | Size (Depth x Width) | Primitives   | 
++------------+----------------------------+-----------+----------------------+--------------+
+|sccomputer  | sccpu/registerfile/RAM_reg | Implied   | 32 x 32              | RAM32M x 12  | 
++------------+----------------------------+-----------+----------------------+--------------+
+
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-3332] Sequential element (sccpu/cntrol_reg/aluc_reg[3]) is unused and will be removed from module sccomputer.
+WARNING: [Synth 8-3332] Sequential element (sccpu/cntrol_reg/aluc_reg[2]) is unused and will be removed from module sccomputer.
+WARNING: [Synth 8-3332] Sequential element (sccpu/cntrol_reg/aluc_reg[1]) is unused and will be removed from module sccomputer.
+WARNING: [Synth 8-3332] Sequential element (sccpu/cntrol_reg/aluc_reg[0]) is unused and will be removed from module sccomputer.
+WARNING: [Synth 8-3332] Sequential element (sccpu/cntrol_reg/regrt_reg) is unused and will be removed from module sccomputer.
+WARNING: [Synth 8-3332] Sequential element (sccpu/cntrol_reg/pcsrc_reg[1]) is unused and will be removed from module sccomputer.
+WARNING: [Synth 8-3332] Sequential element (sccpu/cntrol_reg/pcsrc_reg[0]) is unused and will be removed from module sccomputer.
+WARNING: [Synth 8-3332] Sequential element (sccpu/cntrol_reg/wreg_reg) is unused and will be removed from module sccomputer.
+WARNING: [Synth 8-3332] Sequential element (sccpu/cntrol_reg/aluimm_reg) is unused and will be removed from module sccomputer.
+WARNING: [Synth 8-3332] Sequential element (sccpu/cntrol_reg/m2reg_reg) is unused and will be removed from module sccomputer.
+WARNING: [Synth 8-3332] Sequential element (sccpu/cntrol_reg/shift_reg) is unused and will be removed from module sccomputer.
+WARNING: [Synth 8-3332] Sequential element (sccpu/cntrol_reg/sext_reg) is unused and will be removed from module sccomputer.
+WARNING: [Synth 8-3332] Sequential element (sccpu/cntrol_reg/jal_reg) is unused and will be removed from module sccomputer.
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:11 ; elapsed = 00:00:32 . Memory (MB): peak = 1163.422 ; gain = 746.316
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:14 ; elapsed = 00:00:40 . Memory (MB): peak = 1163.422 ; gain = 746.316
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:14 ; elapsed = 00:00:40 . Memory (MB): peak = 1163.422 ; gain = 746.316
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:14 ; elapsed = 00:00:40 . Memory (MB): peak = 1163.422 ; gain = 746.316
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:14 ; elapsed = 00:00:40 . Memory (MB): peak = 1163.422 ; gain = 746.316
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:14 ; elapsed = 00:00:40 . Memory (MB): peak = 1163.422 ; gain = 746.316
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:14 ; elapsed = 00:00:40 . Memory (MB): peak = 1163.422 ; gain = 746.316
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+---------+------+
+|      |Cell     |Count |
++------+---------+------+
+|1     |BUFG     |     1|
+|2     |CARRY4   |    24|
+|3     |LUT1     |     2|
+|4     |LUT2     |    60|
+|5     |LUT3     |    13|
+|6     |LUT4     |   111|
+|7     |LUT5     |   143|
+|8     |LUT6     |   295|
+|9     |RAM32M   |    10|
+|10    |RAM32X1D |     4|
+|11    |FDCE     |    32|
+|12    |IBUF     |     2|
+|13    |OBUF     |   128|
++------+---------+------+
+
+Report Instance Areas: 
++------+-----------------+----------------+------+
+|      |Instance         |Module          |Cells |
++------+-----------------+----------------+------+
+|1     |top              |                |   825|
+|2     |  inst_mem       |scinstmem       |    29|
+|3     |  sccpu          |CPU             |   665|
+|4     |    alu_reg      |ALU             |     8|
+|5     |    branch_add   |branch_adder    |     8|
+|6     |    pc_add       |adder           |    21|
+|7     |    pc_reg       |program_counter |   603|
+|8     |    registerfile |regfile         |    25|
++------+-----------------+----------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:14 ; elapsed = 00:00:40 . Memory (MB): peak = 1163.422 ; gain = 746.316
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 85 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:14 ; elapsed = 00:00:40 . Memory (MB): peak = 1163.422 ; gain = 746.316
+Synthesis Optimization Complete : Time (s): cpu = 00:00:14 ; elapsed = 00:00:40 . Memory (MB): peak = 1163.422 ; gain = 746.316
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.034 . Memory (MB): peak = 1175.328 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 38 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1225.832 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 14 instances were transformed.
+  RAM32M => RAM32M (RAMD32(x6), RAMS32(x2)): 10 instances
+  RAM32X1D => RAM32X1D (RAMD32(x2)): 4 instances
+
+Synth Design complete, checksum: ab60d54a
+INFO: [Common 17-83] Releasing license: Synthesis
+59 Infos, 85 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:17 ; elapsed = 00:00:43 . Memory (MB): peak = 1225.832 ; gain = 816.570
+INFO: [Common 17-1381] The checkpoint 'C:/Users/dflam/Downloads/Final Project Test/final project test/final project test.runs/synth_1/sccomputer.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file sccomputer_utilization_synth.rpt -pb sccomputer_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Fri May  5 07:22:53 2023...

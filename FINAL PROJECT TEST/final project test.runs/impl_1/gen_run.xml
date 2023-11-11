@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GenRun Id="impl_1" LaunchPart="xc7z010clg400-3" LaunchTime="1683285784">
+  <File Type="PA-TCL" Name="sccomputer.tcl"/>
+  <File Type="REPORTS-TCL" Name="sccomputer_reports.tcl"/>
+  <File Type="BITSTR-MSK" Name="sccomputer.msk"/>
+  <File Type="RDI-RDI" Name="sccomputer.vdi"/>
+  <File Type="BG-BIT" Name="sccomputer.bit"/>
+  <File Type="BG-DRC" Name="sccomputer.drc"/>
+  <File Type="BG-BGN" Name="sccomputer.bgn"/>
+  <File Type="BG-BIN" Name="sccomputer.bin"/>
+  <File Type="BITSTR-RBT" Name="sccomputer.rbt"/>
+  <File Type="BITSTR-NKY" Name="sccomputer.nky"/>
+  <File Type="BITSTR-BMM" Name="sccomputer_bd.bmm"/>
+  <File Type="BITSTR-MMI" Name="sccomputer.mmi"/>
+  <File Type="BITSTR-SYSDEF" Name="sccomputer.sysdef"/>
+  <File Type="BITSTR-LTX" Name="debug_nets.ltx"/>
+  <File Type="BITSTR-LTX" Name="sccomputer.ltx"/>
+  <File Type="WBT-USG" Name="usage_statistics_webtalk.html"/>
+  <File Type="OPT-DRC" Name="sccomputer_drc_opted.rpt"/>
+  <File Type="OPT-HWDEF" Name="sccomputer.hwdef"/>
+  <File Type="PLACE-PRE-SIMILARITY" Name="sccomputer_incremental_reuse_pre_placed.rpt"/>
+  <File Type="ROUTE-DCP" Name="sccomputer_routed.dcp"/>
+  <File Type="ROUTE-ERROR-DCP" Name="sccomputer_routed_error.dcp"/>
+  <File Type="ROUTE-BLACKBOX-DCP" Name="sccomputer_routed_bb.dcp"/>
+  <File Type="ROUTE-TIMING-PB" Name="sccomputer_timing_summary_routed.pb"/>
+  <File Type="OPT-DCP" Name="sccomputer_opt.dcp"/>
+  <File Type="PLACE-DCP" Name="sccomputer_placed.dcp"/>
+  <File Type="PWROPT-DCP" Name="sccomputer_pwropt.dcp"/>
+  <File Type="POSTPLACE-PWROPT-DCP" Name="sccomputer_postplace_pwropt.dcp"/>
+  <File Type="PHYSOPT-DCP" Name="sccomputer_physopt.dcp"/>
+  <File Type="POSTROUTE-PHYSOPT-DCP" Name="sccomputer_postroute_physopt.dcp"/>
+  <File Type="POSTROUTE-PHYSOPT-BLACKBOX-DCP" Name="sccomputer_postroute_physopt_bb.dcp"/>
+  <File Type="PDI-FILE" Name="sccomputer.pdi"/>
+  <File Type="RCFI_FILE" Name="sccomputer.rcfi"/>
+  <File Type="CFI_FILE" Name="sccomputer.cfi"/>
+  <File Type="RNPI_FILE" Name="sccomputer.rnpi"/>
+  <File Type="NPI_FILE" Name="sccomputer.npi"/>
+  <File Type="RBD_FILE" Name="sccomputer.rbd"/>
+  <File Type="ROUTE-RQS" Name="sccomputer_routed.rqs"/>
+  <File Type="POSTROUTE-PHYSOPT-RQS" Name="sccomputer_postroute_physopted.rqs"/>
+  <File Type="ROUTE-RQS-RPT" Name="route_report_qor_suggestions_0.rpt"/>
+  <File Type="POSTROUTE-PHYSOPT-RQS-RPT" Name="postroute_physopt_report_qor_suggestions_0.rpt"/>
+  <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1" RelGenDir="$PGENDIR/sources_1">
+    <Filter Type="Srcs"/>
+    <File Path="$PSRCDIR/sources_1/new/PC.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="DesignMode" Val="RTL"/>
+      <Option Name="TopModule" Val="sccomputer"/>
+      <Option Name="TopAutoSet" Val="TRUE"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="constrs_in" Type="Constrs" RelSrcDir="$PSRCDIR/constrs_1">
+    <Filter Type="Constrs"/>
+    <Config>
+      <Option Name="ConstrsType" Val="XDC"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="utils" Type="Utils" RelSrcDir="$PSRCDIR/utils_1">
+    <Filter Type="Utils"/>
+    <File Path="$PSRCDIR/utils_1/imports/synth_1/EXEMEMreg.dcp">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedInSteps" Val="synth_1"/>
+        <Attr Name="AutoDcp" Val="1"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="TopAutoSet" Val="TRUE"/>
+    </Config>
+  </FileSet>
+  <Strategy Version="1" Minor="2">
+    <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2018"/>
+    <Step Id="init_design"/>
+    <Step Id="opt_design"/>
+    <Step Id="power_opt_design"/>
+    <Step Id="place_design"/>
+    <Step Id="post_place_power_opt_design"/>
+    <Step Id="phys_opt_design"/>
+    <Step Id="route_design"/>
+    <Step Id="post_route_phys_opt_design"/>
+    <Step Id="write_bitstream"/>
+    <Step Id="write_device_image"/>
+  </Strategy>
+</GenRun>

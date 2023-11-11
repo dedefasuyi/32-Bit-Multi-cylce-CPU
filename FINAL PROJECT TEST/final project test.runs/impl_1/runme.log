@@ -1,0 +1,475 @@
+
+*** Running vivado
+    with args -log sccomputer.vdi -applog -m64 -product Vivado -messageDb vivado.pb -mode batch -source sccomputer.tcl -notrace
+
+
+
+****** Vivado v2022.2 (64-bit)
+  **** SW Build 3671981 on Fri Oct 14 05:00:03 MDT 2022
+  **** IP Build 3669848 on Fri Oct 14 08:30:02 MDT 2022
+    ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+
+source sccomputer.tcl -notrace
+create_project: Time (s): cpu = 00:00:05 ; elapsed = 00:00:11 . Memory (MB): peak = 385.211 ; gain = 65.949
+Command: link_design -top sccomputer -part xc7z010clg400-3
+Design is defaulting to srcset: sources_1
+Design is defaulting to constrset: constrs_1
+WARNING: [Project 1-591] Current part 'xc7z010clg400-3' is different from part 'xc7z010clg400-1' stored in the checkpoint.  Please run report_drc, report_timing and report_power.
+INFO: [Device 21-403] Loading part xc7z010clg400-3
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.022 . Memory (MB): peak = 793.309 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 38 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2022.2
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 909.824 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 14 instances were transformed.
+  RAM32M => RAM32M (RAMD32(x6), RAMS32(x2)): 10 instances
+  RAM32X1D => RAM32X1D (RAMD32(x2)): 4 instances
+
+7 Infos, 1 Warnings, 0 Critical Warnings and 0 Errors encountered.
+link_design completed successfully
+link_design: Time (s): cpu = 00:00:04 ; elapsed = 00:00:10 . Memory (MB): peak = 909.824 ; gain = 519.781
+Command: opt_design
+Attempting to get a license for feature 'Implementation' and/or device 'xc7z010'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xc7z010'
+Running DRC as a precondition to command opt_design
+
+Starting DRC Task
+INFO: [DRC 23-27] Running DRC with 2 threads
+INFO: [Project 1-461] DRC finished with 0 Errors
+INFO: [Project 1-462] Please refer to the DRC report (report_drc) for more information.
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:02 . Memory (MB): peak = 939.758 ; gain = 29.934
+
+Starting Cache Timing Information Task
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+Ending Cache Timing Information Task | Checksum: 1311370ac
+
+Time (s): cpu = 00:00:07 ; elapsed = 00:00:17 . Memory (MB): peak = 1481.473 ; gain = 541.715
+
+Starting Logic Optimization Task
+
+Phase 1 Retarget
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Opt 31-49] Retargeted 0 cell(s).
+Phase 1 Retarget | Checksum: 94bf201e
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.347 . Memory (MB): peak = 1815.352 ; gain = 0.000
+INFO: [Opt 31-389] Phase Retarget created 0 cells and removed 1 cells
+
+Phase 2 Constant propagation
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Phase 2 Constant propagation | Checksum: dc72c9f1
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.355 . Memory (MB): peak = 1815.352 ; gain = 0.000
+INFO: [Opt 31-389] Phase Constant propagation created 0 cells and removed 0 cells
+
+Phase 3 Sweep
+Phase 3 Sweep | Checksum: caeafe73
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.394 . Memory (MB): peak = 1815.352 ; gain = 0.000
+INFO: [Opt 31-389] Phase Sweep created 0 cells and removed 0 cells
+
+Phase 4 BUFG optimization
+Phase 4 BUFG optimization | Checksum: caeafe73
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.442 . Memory (MB): peak = 1815.352 ; gain = 0.000
+INFO: [Opt 31-662] Phase BUFG optimization created 0 cells of which 0 are BUFGs and removed 0 cells.
+
+Phase 5 Shift Register Optimization
+INFO: [Opt 31-1064] SRL Remap converted 0 SRLs to 0 registers and converted 0 registers of register chains to 0 SRLs
+Phase 5 Shift Register Optimization | Checksum: caeafe73
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.445 . Memory (MB): peak = 1815.352 ; gain = 0.000
+INFO: [Opt 31-389] Phase Shift Register Optimization created 0 cells and removed 0 cells
+
+Phase 6 Post Processing Netlist
+Phase 6 Post Processing Netlist | Checksum: caeafe73
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.448 . Memory (MB): peak = 1815.352 ; gain = 0.000
+INFO: [Opt 31-389] Phase Post Processing Netlist created 0 cells and removed 0 cells
+Opt_design Change Summary
+=========================
+
+
+-------------------------------------------------------------------------------------------------------------------------
+|  Phase                        |  #Cells created  |  #Cells Removed  |  #Constrained objects preventing optimizations  |
+-------------------------------------------------------------------------------------------------------------------------
+|  Retarget                     |               0  |               1  |                                              0  |
+|  Constant propagation         |               0  |               0  |                                              0  |
+|  Sweep                        |               0  |               0  |                                              0  |
+|  BUFG optimization            |               0  |               0  |                                              0  |
+|  Shift Register Optimization  |               0  |               0  |                                              0  |
+|  Post Processing Netlist      |               0  |               0  |                                              0  |
+-------------------------------------------------------------------------------------------------------------------------
+
+
+
+Starting Connectivity Check Task
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.002 . Memory (MB): peak = 1815.352 ; gain = 0.000
+Ending Logic Optimization Task | Checksum: 14a4397d2
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.463 . Memory (MB): peak = 1815.352 ; gain = 0.000
+
+Starting Power Optimization Task
+INFO: [Pwropt 34-132] Skipping clock gating for clocks with a period < 2.00 ns.
+Ending Power Optimization Task | Checksum: 14a4397d2
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.014 . Memory (MB): peak = 1815.352 ; gain = 0.000
+
+Starting Final Cleanup Task
+Ending Final Cleanup Task | Checksum: 14a4397d2
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1815.352 ; gain = 0.000
+
+Starting Netlist Obfuscation Task
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1815.352 ; gain = 0.000
+Ending Netlist Obfuscation Task | Checksum: 14a4397d2
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1815.352 ; gain = 0.000
+INFO: [Common 17-83] Releasing license: Implementation
+24 Infos, 1 Warnings, 0 Critical Warnings and 0 Errors encountered.
+opt_design completed successfully
+opt_design: Time (s): cpu = 00:00:09 ; elapsed = 00:00:26 . Memory (MB): peak = 1815.352 ; gain = 905.527
+INFO: [Common 17-1381] The checkpoint 'C:/Users/dflam/Downloads/Final Project Test/final project test/final project test.runs/impl_1/sccomputer_opt.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_drc -file sccomputer_drc_opted.rpt -pb sccomputer_drc_opted.pb -rpx sccomputer_drc_opted.rpx
+Command: report_drc -file sccomputer_drc_opted.rpt -pb sccomputer_drc_opted.pb -rpx sccomputer_drc_opted.rpx
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/Vivado/2022.2/data/ip'.
+INFO: [DRC 23-27] Running DRC with 2 threads
+INFO: [Vivado_Tcl 2-168] The results of DRC are in file C:/Users/dflam/Downloads/Final Project Test/final project test/final project test.runs/impl_1/sccomputer_drc_opted.rpt.
+report_drc completed successfully
+Command: place_design
+Attempting to get a license for feature 'Implementation' and/or device 'xc7z010'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xc7z010'
+INFO: [DRC 23-27] Running DRC with 2 threads
+INFO: [Vivado_Tcl 4-198] DRC finished with 0 Errors
+INFO: [Vivado_Tcl 4-199] Please refer to the DRC report (report_drc) for more information.
+Running DRC as a precondition to command place_design
+INFO: [DRC 23-27] Running DRC with 2 threads
+INFO: [Vivado_Tcl 4-198] DRC finished with 0 Errors
+INFO: [Vivado_Tcl 4-199] Please refer to the DRC report (report_drc) for more information.
+
+Starting Placer Task
+INFO: [Place 30-611] Multithreading enabled for place_design using a maximum of 2 CPUs
+
+Phase 1 Placer Initialization
+
+Phase 1.1 Placer Initialization Netlist Sorting
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1815.352 ; gain = 0.000
+Phase 1.1 Placer Initialization Netlist Sorting | Checksum: 9675b47c
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.013 . Memory (MB): peak = 1815.352 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1815.352 ; gain = 0.000
+
+Phase 1.2 IO Placement/ Clock Placement/ Build Placer Device
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+ERROR: [Place 30-58] IO placement is infeasible. Number of unplaced IO Ports (128) is greater than number of available sites (100).
+The following are banks with available pins: 
+ IO Group: 0 with : SioStd: LVCMOS18   VCCO = 1.8 Termination: 0  TermDir:  Out  RangeId: 1 Drv: 12  has only 100 sites available on device, but needs 128 sites.
+	Term: alu[0]
+	Term: alu[1]
+	Term: alu[2]
+	Term: alu[3]
+	Term: alu[4]
+	Term: alu[5]
+	Term: alu[6]
+	Term: alu[7]
+	Term: alu[8]
+	Term: alu[9]
+	Term: alu[10]
+	Term: alu[11]
+	Term: alu[12]
+	Term: alu[13]
+	Term: alu[14]
+	Term: alu[15]
+	Term: alu[16]
+	Term: alu[17]
+	Term: alu[18]
+	Term: alu[19]
+	Term: alu[20]
+	Term: alu[21]
+	Term: alu[22]
+	Term: alu[23]
+	Term: alu[24]
+	Term: alu[25]
+	Term: alu[26]
+	Term: alu[27]
+	Term: alu[28]
+	Term: alu[29]
+	Term: alu[30]
+	Term: alu[31]
+	Term: inst[0]
+	Term: inst[1]
+	Term: inst[2]
+	Term: inst[3]
+	Term: inst[4]
+	Term: inst[5]
+	Term: inst[6]
+	Term: inst[7]
+	Term: inst[8]
+	Term: inst[9]
+	Term: inst[10]
+	Term: inst[11]
+	Term: inst[12]
+	Term: inst[13]
+	Term: inst[14]
+	Term: inst[15]
+	Term: inst[16]
+	Term: inst[17]
+	Term: inst[18]
+	Term: inst[19]
+	Term: inst[20]
+	Term: inst[21]
+	Term: inst[22]
+	Term: inst[23]
+	Term: inst[24]
+	Term: inst[25]
+	Term: inst[26]
+	Term: inst[27]
+	Term: inst[28]
+	Term: inst[29]
+	Term: inst[30]
+	Term: inst[31]
+	Term: memout[0]
+	Term: memout[1]
+	Term: memout[2]
+	Term: memout[3]
+	Term: memout[4]
+	Term: memout[5]
+	Term: memout[6]
+	Term: memout[7]
+	Term: memout[8]
+	Term: memout[9]
+	Term: memout[10]
+	Term: memout[11]
+	Term: memout[12]
+	Term: memout[13]
+	Term: memout[14]
+	Term: memout[15]
+	Term: memout[16]
+	Term: memout[17]
+	Term: memout[18]
+	Term: memout[19]
+	Term: memout[20]
+	Term: memout[21]
+	Term: memout[22]
+	Term: memout[23]
+	Term: memout[24]
+	Term: memout[25]
+	Term: memout[26]
+	Term: memout[27]
+	Term: memout[28]
+	Term: memout[29]
+	Term: memout[30]
+	Term: memout[31]
+	Term: pc[0]
+	Term: pc[1]
+	Term: pc[2]
+	Term: pc[3]
+	Term: pc[4]
+	Term: pc[5]
+	Term: pc[6]
+	Term: pc[7]
+	Term: pc[8]
+	Term: pc[9]
+	Term: pc[10]
+	Term: pc[11]
+	Term: pc[12]
+	Term: pc[13]
+	Term: pc[14]
+	Term: pc[15]
+	Term: pc[16]
+	Term: pc[17]
+	Term: pc[18]
+	Term: pc[19]
+	Term: pc[20]
+	Term: pc[21]
+	Term: pc[22]
+	Term: pc[23]
+	Term: pc[24]
+	Term: pc[25]
+	Term: pc[26]
+	Term: pc[27]
+	Term: pc[28]
+	Term: pc[29]
+	Term: pc[30]
+	Term: pc[31]
+
+
+Resolution: Consider using Xilinx part with greater number of IO pins
+ERROR: [Place 30-58] IO placement is infeasible. Number of unplaced IO Ports (129) is greater than number of available sites (100).
+The following are banks with available pins: 
+ IO Group: 0 with : SioStd: LVCMOS18   VCCO = 1.8 Termination: 0  TermDir:  Out  RangeId: 1 Drv: 12  has only 100 sites available on device, but needs 128 sites.
+	Term: alu[0]
+	Term: alu[1]
+	Term: alu[2]
+	Term: alu[3]
+	Term: alu[4]
+	Term: alu[5]
+	Term: alu[6]
+	Term: alu[7]
+	Term: alu[8]
+	Term: alu[9]
+	Term: alu[10]
+	Term: alu[11]
+	Term: alu[12]
+	Term: alu[13]
+	Term: alu[14]
+	Term: alu[15]
+	Term: alu[16]
+	Term: alu[17]
+	Term: alu[18]
+	Term: alu[19]
+	Term: alu[20]
+	Term: alu[21]
+	Term: alu[22]
+	Term: alu[23]
+	Term: alu[24]
+	Term: alu[25]
+	Term: alu[26]
+	Term: alu[27]
+	Term: alu[28]
+	Term: alu[29]
+	Term: alu[30]
+	Term: alu[31]
+	Term: inst[0]
+	Term: inst[1]
+	Term: inst[2]
+	Term: inst[3]
+	Term: inst[4]
+	Term: inst[5]
+	Term: inst[6]
+	Term: inst[7]
+	Term: inst[8]
+	Term: inst[9]
+	Term: inst[10]
+	Term: inst[11]
+	Term: inst[12]
+	Term: inst[13]
+	Term: inst[14]
+	Term: inst[15]
+	Term: inst[16]
+	Term: inst[17]
+	Term: inst[18]
+	Term: inst[19]
+	Term: inst[20]
+	Term: inst[21]
+	Term: inst[22]
+	Term: inst[23]
+	Term: inst[24]
+	Term: inst[25]
+	Term: inst[26]
+	Term: inst[27]
+	Term: inst[28]
+	Term: inst[29]
+	Term: inst[30]
+	Term: inst[31]
+	Term: memout[0]
+	Term: memout[1]
+	Term: memout[2]
+	Term: memout[3]
+	Term: memout[4]
+	Term: memout[5]
+	Term: memout[6]
+	Term: memout[7]
+	Term: memout[8]
+	Term: memout[9]
+	Term: memout[10]
+	Term: memout[11]
+	Term: memout[12]
+	Term: memout[13]
+	Term: memout[14]
+	Term: memout[15]
+	Term: memout[16]
+	Term: memout[17]
+	Term: memout[18]
+	Term: memout[19]
+	Term: memout[20]
+	Term: memout[21]
+	Term: memout[22]
+	Term: memout[23]
+	Term: memout[24]
+	Term: memout[25]
+	Term: memout[26]
+	Term: memout[27]
+	Term: memout[28]
+	Term: memout[29]
+	Term: memout[30]
+	Term: memout[31]
+	Term: pc[0]
+	Term: pc[1]
+	Term: pc[2]
+	Term: pc[3]
+	Term: pc[4]
+	Term: pc[5]
+	Term: pc[6]
+	Term: pc[7]
+	Term: pc[8]
+	Term: pc[9]
+	Term: pc[10]
+	Term: pc[11]
+	Term: pc[12]
+	Term: pc[13]
+	Term: pc[14]
+	Term: pc[15]
+	Term: pc[16]
+	Term: pc[17]
+	Term: pc[18]
+	Term: pc[19]
+	Term: pc[20]
+	Term: pc[21]
+	Term: pc[22]
+	Term: pc[23]
+	Term: pc[24]
+	Term: pc[25]
+	Term: pc[26]
+	Term: pc[27]
+	Term: pc[28]
+	Term: pc[29]
+	Term: pc[30]
+	Term: pc[31]
+
+
+Resolution: Consider using Xilinx part with greater number of IO pins
+ERROR: [Place 30-374] IO placer failed to find a solution
+Below is the partial placement that can be analyzed to see if any constraint modifications will make the IO placement problem easier to solve.
+
++-------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+|                                                                     IO Placement : Bank Stats                                                                           |
++----+-------+-------+------------------------------------------------------------------------+------------------------------------------+--------+--------+--------+-----+
+| Id | Pins  | Terms |                               Standards                                |                IDelayCtrls               |  VREF  |  VCCO  |   VR   | DCI |
++----+-------+-------+------------------------------------------------------------------------+------------------------------------------+--------+--------+--------+-----+
+|  0 |     0 |     0 |                                                                        |                                          |        |        |        |     |
+| 13 |     0 |     0 |                                                                        |                                          |        |        |        |     |
+| 34 |    50 |     0 |                                                                        |                                          |        |        |        |     |
+| 35 |    50 |     0 |                                                                        |                                          |        |        |        |     |
++----+-------+-------+------------------------------------------------------------------------+------------------------------------------+--------+--------+--------+-----+
+|    |   100 |     0 |                                                                        |                                          |        |        |        |     |
++----+-------+-------+------------------------------------------------------------------------+------------------------------------------+--------+--------+--------+-----+
+
+IO Placement:
++--------+----------------------+-----------------+----------------------+----------------------+----------------------+
+| BankId |             Terminal | Standard        | Site                 | Pin                  | Attributes           |
++--------+----------------------+-----------------+----------------------+----------------------+----------------------+
+
+Phase 1.2 IO Placement/ Clock Placement/ Build Placer Device | Checksum: 17dffde6
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.685 . Memory (MB): peak = 1815.352 ; gain = 0.000
+Phase 1 Placer Initialization | Checksum: 17dffde6
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.686 . Memory (MB): peak = 1815.352 ; gain = 0.000
+ERROR: [Place 30-99] Placer failed with error: 'IO Clock Placer failed'
+Please review all ERROR, CRITICAL WARNING, and WARNING messages during placement to understand the cause for failure.
+Ending Placer Task | Checksum: 17dffde6
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.687 . Memory (MB): peak = 1815.352 ; gain = 0.000
+INFO: [Common 17-83] Releasing license: Implementation
+41 Infos, 1 Warnings, 0 Critical Warnings and 5 Errors encountered.
+place_design failed
+ERROR: [Common 17-69] Command failed: Placer could not place all instances
+INFO: [Common 17-206] Exiting Vivado at Fri May  5 07:24:14 2023...
