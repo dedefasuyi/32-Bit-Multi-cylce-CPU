@@ -21,3 +21,16 @@ All instructions use a set of common components that includes the instruction me
 
 This type of architecture is important in computer organization and design because it is simple and can be designed easier for many applications than other, more complex architectures. Pipelining with this architecture is effective and cheap, making it adequate for many applications.
 
+
+Waveform:
+![image](https://github.com/dedefasuyi/32-Bit-Multi-cylce-CPU/assets/98562023/a91a1252-6391-4c35-899d-f4f7327fe96c)
+
+
+I/O Planning: 
+![image](https://github.com/dedefasuyi/32-Bit-Multi-cylce-CPU/assets/98562023/b5f752dc-eb91-4f6b-9317-ecf0a155f42f)
+
+Floor Planning:
+![image](https://github.com/dedefasuyi/32-Bit-Multi-cylce-CPU/assets/98562023/bf0e6e47-fc14-467c-9cee-7ab0fba3c865)
+
+Design Schematics:
+![image](https://github.com/dedefasuyi/32-Bit-Multi-cylce-CPU/assets/98562023/01e41822-5a6a-4e00-9844-df6dae5fa8f6)
